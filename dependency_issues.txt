@@ -1,0 +1,29 @@
+Conflicting dependencies in voicebot project:
+
+*   absl-py: 1.4.0 in API, 2.3.0 in TTS
+*   aiohttp: 3.9.5 in API, 3.12.13 in TTS
+*   attrs: 22.1.0 in API, 25.3.0 in TTS
+*   click: 8.1.8 in API, 8.2.1 in TTS
+*   Flask: 2.2.5 in API, 3.1.1 in TTS
+*   kiwisolver: 1.4.7 in API, 1.4.8 in TTS
+*   llvmlite: 0.43.0 in API, 0.44.0 in TTS
+*   Markdown: 3.8 in API, 3.8.1 in TTS
+*   matplotlib: 3.5.3 in API, 3.10.3 in TTS
+*   multidict: 5.2.0 in API, 6.5.0 in TTS
+*   networkx: 2.6.3 in API, 3.5 in TTS
+*   numba: 0.60.0 in API, 0.61.2 in TTS
+*   numpy: 1.23.5 in API, 2.2.6 in TTS
+*   packaging: 20.9 in API, 25.0 in TTS
+*   protobuf: 4.23.3 in API, 6.31.1 in TTS
+*   python-dateutil: 2.8.2 in API, 2.9.0.post0 in TTS
+*   pytz: 2022.7.1 in API, 2025.2 in TTS
+*   regex: 2022.10.31 in API, 2024.11.6 in TTS
+*   safetensors: 0.4.5 in API, 0.5.3 in TTS
+*   scikit-learn: 1.1.3 in API, 1.7.0 in TTS
+*   scipy: 1.10.1 in API, 1.15.3 in TTS
+*   tensorboard: 2.12.3 in API, 2.19.0 in TTS
+*   urllib3: 1.26.20 in API, 2.5.0 in TTS
+
+Dependency issues between projects:
+
+*   The main project requires `flask`, while the voicebot project requires a specific version of `Flask` (2.2.5 or 3.1.1). This will cause a conflict if both projects are installed in the same environment.
