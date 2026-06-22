@@ -361,7 +361,7 @@ def check_db_connection():
 def get_user_orders(user_id):
     conn = get_connection()
     cur = conn.cursor(dictionary=True)
-    cur.execute("SELECT * FROM orders WHERE user_id = %s ORDER BY timestamp DESC", (user_id,))
+    cur.execute("SELECT * FROM orders WHERE user_phone = %s ORDER BY created_at DESC", (user_id,))
     rows = cur.fetchall()
     cur.close()
     conn.close()
